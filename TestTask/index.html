@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+<body>
+        <header class="header">
+            <div class="container header-container">
+                <nav>
+                    <div class="nav-left">
+                        <a class="logo">
+                            <img  src="img/logo.svg" alt="logo">
+                        </a>
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link-dark" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">Works</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-right">
+                        <button class="burger">
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                            <span class="burger-line"></span>
+                        </button>
+                    </div>
+                </nav>    
+            </div>
+        </header>
+        <main>
+            <section class="introduction">
+                <div class="container">
+                    <div class="description">
+                        <div class="greeting">
+                            <span class="hello">Hello,</span>
+                            <h1>Vladislav Deineko</h1>
+                        </div>
+                    </div>
+                    <span class="developer">a PolessUP Front-end  Developer</span>
+                    <img src="img/user.png" alt="Photo" class="user">
+                    <img src="img/gradient.png" alt="" class="gradient">
+                    <br><button class="lets-talk">Let&rsquo;s Talk</button>
+                    <div class="popup">
+                        <div class="modal-window">
+                        <span class="close-window">x</span>
+                        <div class="mysocials">
+                            <div class="vk">
+                                <a href="#">My VKontakte</a><br>
+                                <a href="#">
+                                    <img src="img/vk.svg" alt="link to VK">
+                                </a>
+                            </div>
+                            <div class="tg">
+                                <a href="#">My Telegram</a><br>
+                                <a href="#">
+                                    <img src="img/telegram.svg" alt="link to Telegram">
+                                </a>
+                            </div>
+                            <div class="inst">
+                                <a href="#">My </a><br>
+                                <a href="#">
+                                    <img src="" alt="link to VK">
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <script>
+                        var popup = document.querySelector(".popup");
+                        var btn = document.querySelector(".lets-talk");
+                        var closeButton = document.querySelector(".close-window");
+                      
+                        function togglePopup() {
+                        popup.classList.toggle("show-popup");
+                        }
+                      
+                        function windowOnClick(event) {
+                        if (event.target === popup) {
+                            togglePopup();
+                        }
+                        }
+                      
+                        btn.addEventListener("click", togglePopup);
+                        closeButton.addEventListener("click", togglePopup);
+                        window.addEventListener("click", windowOnClick);
+                    </script>
+                </div>
+            </section>
+
+            <section class="services">
+                <a name="services"></a>
+                <div class="container container-activities">
+                    <div class="activities">
+                        <p class="activities-services">Services</p>
+                        <h2 class="h2">What actually <br> I&nbsp;love to&nbsp;do</h2>
+                    </div>
+                    <div class="articles">
+
+                        <div class="services-block">
+                            <div class="articles-item"><img src="img/UX.png" alt="UX Research logo"><span class="services-article">UX Research</span></div>
+                            <div class="services-text">New demos are continually added and buying a&nbsp;single license for Mak gives you access to&nbsp;all of <br> what&rsquo;s shown below, plus everything that will be&nbsp;added in&nbsp;the future.</div>
+                        </div>
+
+                        <div class="services-block">
+                            <div class="articles-item"><img src="img/brand.png" alt="Brand Design logo"><span class="services-article">Brand Design</span></div>
+                            <div class="services-text">New demos are continually added and buying a&nbsp;single license for Mak gives you access to&nbsp;all of <br> what&rsquo;s shown below, plus everything that will be&nbsp;added in&nbsp;the future.</div>
+                        </div>
+
+                        <div class="services-block">
+                            <div class="articles-item"><img src="img/web.png" alt="Web Development logo"><span class="services-article">Web Development</span></div>
+                            <div class="services-text">New demos are continually added and buying a&nbsp;single license for Mak gives you access to&nbsp;all of <br> what&rsquo;s shown below, plus everything that will be&nbsp;added in&nbsp;the future.</div>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+
+            <section class="portfolio">
+                <a name="portfolio"></a>
+                <div class="container">
+                    <div class="container-projects">
+                        <div class="projects">
+                            <p class="projects-article">Portfolio</p>
+                            <h2 class="h2">All Creative <br> Projects</h2>
+                        </div>
+                        <div class="more"><a class="explore-more" href="#"> <p class="explore-text">Explore More</p> <img class="arrow" src="img/arrow.svg" alt="arrow"></a></div>
+                    </div>
+                    <div class="pictures">
+                        <img src="img/pic1.png" alt="picture">
+                        <img src="img/pic2.png" alt="picture">
+                    </div>
+                </div>
+            </section>
+
+            <section class="technologies">
+                <div class="container">
+                    <div class="techs more">
+                        <p class="projects-article">Technologies</p>
+                        <h2 class="h2">Big Deal <br> With</h2>
+                    </div>
+                    <div class="techs-logos">
+                        <div class="html tech-obj">
+                            <img class="tech-img" src="img/html.svg" alt="html logo">
+                            <span class="tech-text">Html</span>
+                        </div>
+                        <div class="css tech-obj">
+                            <img class="tech-img" src="img/css.svg" alt="css logo">
+                            <span class="tech-text">Css</span>
+                        </div>
+                        <div class="js tech-obj">
+                            <img class="tech-img" src="img/js.svg" alt="javascript logo">
+                            <span class="tech-text">Js</span>
+                        </div>
+                        <div class="sass tech-obj">
+                            <img class="tech-img" src="img/sass.svg" alt="sass logo">
+                            <span class="tech-text">Sass</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="container">
+                    <div class="techs more">
+                        <p class="projects-article">Testimonials</p>
+                        <h2 class="h2">What People <br>Says</h2>
+                    </div>
+                    <div class="review">
+                        <img src="img/quotes.svg" alt="quotes" class="quotes">
+                        <p class="review-article">Quote testimonials demonstrate support for your product or&nbsp;feature from a&nbsp;user who has experience with&nbsp;it. This can be&nbsp;significantly more effective than traditional advertising methods as&nbsp;most consumers will trust.</p>
+                        <img src="img/man.svg" alt="man's picture" class="man">
+                        <span class="name">Michal John</span>
+                        <span class="post">CEO of MZP</span>
+                        <img src="img/people1.png" alt="" class="people1">
+                        <img src="img/people2.png" alt="" class="people2">
+                        <img src="img/people3.png" alt="" class="people3">
+                        <img src="img/people4.png" alt="" class="people4">
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="blog">
+                <a name="blog"></a>
+                <div class="container container-flex">
+                    <div class="techs more">
+                        <p class="projects-article">Blog</p>
+                        <h2 class="h2 line">Get News <br>Feeds</h2>
+                    </div>
+                    <div class="grid">
+                        <div class="blog__card-1">
+                            <div>
+                                <img src="img/blog-pic1.png" alt="picture">
+                            </div>
+                            <div class="blog__data">
+                                <span>20 June/2020</span>
+                                <p class="blog__text">Technology is evolving rapidly. New <br>devices and applications.</p>
+                            </div>
+                        </div>
+                        <div class="blog__card-2">
+                            <div>
+                                <img src="img/blog-pic2.png" alt="picture">
+                            </div>
+                            <div class="blog__data">
+                                <span>20 June/2020</span>
+                                <a class="blog__text" href="#">
+                                    <p>New devices and applications come to the market.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="blog__card-3">
+                            <div>
+                                <img src="img/blog-pic3.png" alt="picture">
+                            </div>
+                            <div class="blog__data">
+                                <span>20 June/2020</span>
+                                <a class="blog__text" href="">
+                                    <p>Every day providing solutions to problems.</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- <div class="grid-container more ">
+                        <div class="grid">
+                            <div class="grid-item1"><img src="img/blog-pic1.png" alt="" class="grid-pic1"></div>
+                            <div class="grid-item2"><img src="img/blog-pic2.png" alt="" class="grid-pic2"></div>
+                            <div class="grid-item3"><img src="img/blog-pic3.png" alt="" class="pic3"></div>
+                            <div class="grid-item4"><span class="grid-text1">20 June/2020</span></div>
+                            <div class="grid-item5"><span class="grid-text2">Technology is evolving rapidly. New <br>and applications.</span></div>
+                        </div>
+                    </div> -->
+
+
+                </div>
+                
+            </section>
+
+        </main>
+        <footer>
+            
+        </footer>
+</body>
+</html>
